@@ -10,7 +10,9 @@ export default function Clock({ location }) {
 
   return (
     <div>
-      <p>{String(dateState.getMinutes()).padStart(2, "0")}</p>
+        <p>Good {location.datetime.timeday_gen}, it's currently</p>
+      <p>{location.datetime.hour_12_wolz}:{String(dateState.getMinutes()).padStart(2, "0")} <span>{location.datetime.offset_tzab}</span></p>
+      <p>In {location.state == null ? `${location.country}, ${location.timezone.wmo}` : `${location.city}, ${location.state_code}`} </p>
     </div>
   )
 }
