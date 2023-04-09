@@ -1,0 +1,48 @@
+.clock{
+    position: relative;
+    margin-bottom: 2em;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.clock__greeting, .clock__location{
+    font-size: 0.9em;
+    letter-spacing: 2px;
+}
+
+.clock__time{
+    margin: 0.15em 0;
+    font-size: 6em;
+    font-weight: 500;
+}
+
+.clock__timezone{
+    color: rgba(255, 255, 255, 0.751);
+    font-size: 0.25em;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.clock__button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0.5em 1.5em;
+    border: none;
+    border-radius: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 200ms ease-in;
+    cursor: pointer;
+}
+
+.clock__button > i{
+    font-size: 0.55em;
+}
+
+.clock__button:hover{
+    background-color: #232323;
+    color: #ffffff;
+    border: 1px solid #fff;
+}
