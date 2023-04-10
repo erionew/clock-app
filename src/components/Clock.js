@@ -2,9 +2,12 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import '../stylesheets/clock.css'
 
+//passing the location and buttonHandler as props, so that the component can use the fetched API + button handler defined in the App component
 export default function Clock({ location, buttonHandler }) {
     const [dateState, setDateState] = useState(new Date())
-
+    //The API does show the minutes and seconds, but I didn't want to fetch the data every second.
+    //My goal was to change the state of the 'dateState' every second to make sure the clock was as accurate as possible.
+    //At first, the state updated every minute, but that didn't work because the minute would change based on when the user opened the page. 
     useEffect(() => {
         setInterval(() => setDateState(new Date()), 1000)
     }, dateState )
