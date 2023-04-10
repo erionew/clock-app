@@ -1,4 +1,5 @@
-# Clock App
+# Clock App<img width="1440" alt="Screen Shot 2023-04-10 at 11 27 26 AM" src="https://user-images.githubusercontent.com/118637175/230946152-8bc19567-8de9-4440-ba2e-2be00e811c23.png">
+
 
 
 ## Introduction
@@ -10,11 +11,6 @@ This application displays the user's local time and date using the [Timezone API
 - Mobile First Design
 - Gets API data using Fetch
 - Live clock displays time based on the user's timezone
-
-## How to Use
-1. Visit the [live website](https://erionew.github.io/clock-app/)
-2. Type in a word
-3. Press the search button to get results
 
 ## Live Website
 https://erionew.github.io/clock-app/
